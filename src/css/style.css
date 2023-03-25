@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+div.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;  
+  position: relative;
+  padding:0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  
+  width: 814px;
+  height: 600px;
+  /* border: 1px solid black; */
+  background: url('/src/assets/canvas-background.png') center center no-repeat;
+  background-size: contain;
+}
+
+
+
+ul.girlfriends {
+  width: 200px;
+  height: 600px;
+  border: 1px solid black;
+  padding:0;
+  margin:0 20px 0 0;
+  list-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+ul.girlfriends li button.start-dating {
+  display: block;
+}
+ul.girlfriends li button.break-up {
+  display: none;
+}
+
+ul.girlfriends li.going-out button.start-dating {
+  display: none;
+}
+ul.girlfriends li input {
+  width: 190px;
+  border: 1px solid #ddd;
+}
+ul.girlfriends li.going-out button.break-up {
+  display: block;
+}

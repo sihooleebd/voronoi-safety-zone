@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Safety Zone</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://yarn.pm/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <script type="module" src="src/index.ts"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_APP_KEY_HERE&libraries=services"
+    ></script>
+  </head>
+  <body>
+    <template id="input-form">
+      <input type="text" class="address" placeholder="주소를 입력해주세요" />
+      <button class="start-dating">사귀기</button>
+      <button class="break-up">그만 사귀기</button>
+    </template>
+
+    <div class="wrapper">
+      <ul class="girlfriends">
+        <h1 style="text-align: center">연애안전지대</h1>
+        <div>
+          예시<br />
+          푸른마을 : 경기 성남시 분당구 수내로 206<br />
+          초림프라자 : 경기 성남시 분당구 백현로101번길 17<br />
+          에버빌(분당대진고 옆) : 경기 성남시 분당구 분당로 283<br />
+          아이파크 분당 : 경기 성남시 분당구 정자일로213번길 5 <br />
+          <br />
+        </div>
+      </ul>
+      <canvas class="canvas"></canvas>
+    </div>
+  </body>
+</html>
